@@ -15,6 +15,7 @@ body {
 }
 
 .d-flex {
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,16 +24,37 @@ body {
 
 .red {
   position: relative;
-  width: 400px;
-  height: 400px;
+  width: 700px;
+  height: 700px;
   background: red;
+}
+
+.orange {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  background: orange;
+}
+
+.yellow {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  background: yellow;
 }
 
 .green {
   position: relative;
+  width: 400px;
+  height: 400px;
+  background: green;
+}
+
+.celestial-blue {
+  position: relative;
   width: 300px;
   height: 300px;
-  background: green;
+  background: #1156e4;
 }
 
 .blue {
@@ -42,13 +64,19 @@ body {
   background: blue;
 }
 
+.purple {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background: purple;
+}
+
 .tooltip {
   width: 300px;
   min-height: 100px;
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #efefef;
   padding: .5rem;
   border-radius: .5rem;
   font-size: 1.25rem;
@@ -57,19 +85,39 @@ body {
 
 .tooltip__image {
   width: 100px;
-  height: 100%;
+  height: 100px;
   margin: .5rem;
   float: right;
 }
 
 .tooltip_red {
-  background-color: red;
+  background: red;
+}
+
+.tooltip_orange {
+  background: orange;
+}
+
+.tooltip_yellow {
+  background: yellow;
 }
 
 .tooltip_green {
-  background-color: green;
+  background: green;
+}
+
+.tooltip_celestial-blue {
+  background: #1156e4;
 }
 
 .tooltip_blue {
-  background-color: blue;
+  background: blue;
+}
+
+.tooltip_purple {
+  background: purple;
+}
+
+.highlighted {
+  background-color: #efefef;
 }
