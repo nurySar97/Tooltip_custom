@@ -43,7 +43,7 @@ body {
 }
 
 .tooltip {
-  width: 200px;
+  width: 300px;
   min-height: 100px;
   position: absolute;
   top: 0;
@@ -53,6 +53,13 @@ body {
   border-radius: .5rem;
   font-size: 1.25rem;
   color: #efefef;
+}
+
+.tooltip__image {
+  width: 100px;
+  height: 100%;
+  margin: .5rem;
+  float: right;
 }
 
 .tooltip_red {

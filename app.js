@@ -49,7 +49,13 @@ class Tooltip {
   createToolTip(parentNode, type) {
     this.tooltip.current = document.createElement('div');
     this.tooltip.current.className = `tooltip tooltip_${type}`;
-    this.tooltip.current.innerHTML = this.texts[type];
+    this.tooltip.current.innerHTML = 
+    `
+    <img class='tooltip__image' src='./assets/${type}.jpg' />
+      <div class='tooltip__text'>
+        ${this.texts[type]}
+      </div>
+    `;
     parentNode.appendChild(this.tooltip.current);
     return this.tooltip.current;
   }
@@ -58,6 +64,7 @@ class Tooltip {
     this.tooltip.current.remove();
     this.tooltip.current = null;
   }
+
 
   setStyle(element, styles) {
     return Object.assign(element.style, styles);
